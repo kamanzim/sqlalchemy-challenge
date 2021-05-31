@@ -17,7 +17,8 @@ from sqlalchemy.pool import StaticPool
 
 #################################################
 # Database Setup
-#################################################
+################################################
+# Using reference "https://codereview.stackexchange.com/questions/199872/a-simple-library-using-flask-and-sqlalchemy"
 engine = create_engine("sqlite:///Resources/hawaii.sqlite", connect_args={"check_same_thread": False}, poolclass=StaticPool, echo=True)
 
 # reflect an existing database into a new model
